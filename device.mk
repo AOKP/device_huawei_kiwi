@@ -151,7 +151,8 @@ PRODUCT_PACKAGES += \
     gralloc.msm8916 \
     hwcomposer.msm8916 \
     libtinyxml \
-    memtrack.msm8916
+    memtrack.msm8916 \
+    vendor.display.config@1.0
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -356,6 +357,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # WiFi Display
-ifneq ($(QCPATH),)
 PRODUCT_BOOT_JARS += WfdCommon
-endif
