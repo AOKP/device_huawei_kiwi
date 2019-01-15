@@ -76,7 +76,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/aanc_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aanc_tuning_mixer.txt \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_skuk.xml \
     $(LOCAL_PATH)/audio/sound_param/kiw/Bluetooth_cal.acdb:system/etc/sound_param/kiw/Bluetooth_cal.acdb \
     $(LOCAL_PATH)/audio/sound_param/kiw/General_cal.acdb:system/etc/sound_param/kiw/General_cal.acdb \
@@ -102,6 +102,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_param/kiw_l/nxp/Tfa9895-GK.cnt:system/etc/sound_param/kiw_l/nxp/Tfa9895-GK.cnt \
     $(LOCAL_PATH)/audio/sound_param/kiw_l/nxp/Tfa9895.cnt:system/etc/sound_param/kiw_l/nxp/Tfa9895.cnt \
     $(LOCAL_PATH)/audio/sound_param/kiw_l/nxp/Tfa9895_coefficient.config:system/etc/sound_param/kiw_l/nxp/Tfa9895_coefficient.config
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # ANT+
 PRODUCT_PACKAGES += \
