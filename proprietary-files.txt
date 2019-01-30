@@ -4,14 +4,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
 
-# ANT
--lib64/libantradio.so:vendor/lib64/libantradio.so|226f5531e2a43bd3d12008b964e007a30f2192a0
--lib/libantradio.so:vendor/lib/libantradio.so|68152c633a1fa47801b352400d0850f3ffae2813
-lib64/com.qualcomm.qti.ant@1.0.so:vendor/lib64/com.qualcomm.qti.ant@1.0.so|ae1ab61e1446636a1a467a2e5c2394e8677f7a9b
-lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|10444ef8178cbe0b2afebf08cf5102355ff78bd2
-lib/com.qualcomm.qti.ant@1.0.so:vendor/lib/com.qualcomm.qti.ant@1.0.so|2b0accf21c1c831871b128a19a1a2445c88313c2
-vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so|a2264d386f65012a23b91478e4d4c05ba846b6dc
-
 # Audio
 -lib64/libtfa9895.so:vendor/lib64/libtfa9895.so|210a4a98eaf1e466085de3d437cb8f921b443c46
 -lib/libtfa9895.so:vendor/lib/libtfa9895.so|5c036aaba7c5c2f8c89ac1b99d2a4cea15c66dd4
@@ -61,16 +53,9 @@ etc/sound_param/kiw_l/nxp/Tfa9895-GK.cnt:vendor/etc/sound_param/kiw_l/nxp/Tfa989
 bin/vm_bms:vendor/bin/vm_bms
 
 # Bluetooth
-# aptX - from marlin - OPM1.171019.011
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
-bin/hw/android.hardware.bluetooth@1.0-service-qti:vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|fac1bf6f1bca63f732818caacee22348aabbc87b
-etc/init/android.hardware.bluetooth@1.0-service-qti.rc:vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|1a2dc1c2d217f47b9c99a0afa9e4912abd32e381
-lib64/libaptX_encoder.so:vendor/lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
-lib/libaptX_encoder.so:vendor/lib/libaptX_encoder.so|984739a0bc968e18f75ced205733fe3f51c2d4f0
 lib64/libbtaddr.so:vendor/lib64/libbtaddr.so
 lib64/libbtpower.so:vendor/lib64/libbtpower.so
-lib64/libbt-hidlclient.so:vendor/lib64/libbt-hidlclient.so|8f6630a216942b2507340129858ee8aae8e724a6
-lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|28631704ea8e625a497dcf17a10fd492423edc5b
 vendor/lib64/libbtnv.so
 
 # Camera
@@ -391,14 +376,6 @@ lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
 lib64/libservices.huawei.so:vendor/lib64/libservices.huawei.so
 bin/signinfolistener:vendor/bin/signinfolistener
 
-# FM Radio - from oneplus3 - OPR6.170623.013 system dump
-lib/vendor.qti.hardware.fm@1.0.so:vendor/lib/vendor.qti.hardware.fm@1.0.so|a32ae5e1a604cc0fa0f1e0704616b5af4f0188a9
-lib64/vendor.qti.hardware.fm@1.0.so:vendor/lib64/vendor.qti.hardware.fm@1.0.so|733726f15ab93a2c621bc3a0bc15442fd4a00dd0
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|25b5f6f12fd97105ce8a550449809f84bc5d2be6
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|f64cc14d4c2ac1387a618ac90bd8688efd9fab1e
-vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so|ba538b677294617ab905e55a82910943d96c5fef
-vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so|8ac093a196439dc403b2fa099d838c33242efa82
-
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.msm8916.so
 
@@ -495,7 +472,7 @@ vendor/lib/libvpplibrary.so|e13326fe723e65fcda0b3805a6162c8f2ca06e36
 
 # Perf
 etc/permissions/com.qualcomm.qti.Performance.xml:vendor/etc/permissions/com.qualcomm.qti.Performance.xml|36b05c8238bb488a3210bbc0d2a4ed28784961f0
--framework/QPerformance.jar:vendor/framework/QPerformance.jar|d492a8f52938f72cf60a8ceda302b2bdebde2f92
+framework/QPerformance.jar:vendor/framework/QPerformance.jar|d492a8f52938f72cf60a8ceda302b2bdebde2f92
 vendor/bin/perfd
 vendor/lib/libqti-perfd-client.so
 vendor/lib64/libqti-perfd-client.so
