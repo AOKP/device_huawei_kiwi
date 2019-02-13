@@ -130,6 +130,3 @@ persist.sys.usb.config.extra=none
 
 # WiFi
 wifi.interface=wlan0
-
-#ZRAM
-ro.config.zram=true
