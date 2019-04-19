@@ -1,7 +1,7 @@
 [
   {
     "remote":      "github",
-    "repository":  "joelh/android_kernel_huawei_kiwi",
+    "repository":  "ArrowOS-Devices/android_kernel_huawei_kiwi",
     "target_path": "kernel/huawei/kiwi",
     "branch":      "arrow-9.x"
   },
