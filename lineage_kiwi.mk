@@ -1,6 +1,4 @@
-#
 # Copyright (C) 2014 The CyanogenMod Project
-# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,22 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l.mk)
-
-# Inherit from kiwi device
-$(call inherit-product, device/huawei/kiwi/device.mk)
+$(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_BRAND := HONOR
-PRODUCT_DEVICE := kiwi
-PRODUCT_MANUFACTURER := HUAWEI
-PRODUCT_MODEL := KIW-L24
 PRODUCT_NAME := lineage_kiwi
+BOARD_VENDOR := huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
